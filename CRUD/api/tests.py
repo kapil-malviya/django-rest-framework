@@ -59,4 +59,4 @@ def delete_data():
 	data = r.json()
 	print(data)
 
-delete_data()
+delete_data() 
