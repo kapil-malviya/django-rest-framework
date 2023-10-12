@@ -62,7 +62,7 @@ def student_api(request):
     	json_data = request.body
     	stream = io.BytesIO(json_data)
     	pythondata = JSONParser().parse(stream)
-    	idd = pythondata.get('id')
+    	idd = pythondata.get('id') 
     	stu = Student.objects.get(id=idd)
     	stu.delete()
     	response = {'msg':'Data Deleted'}
