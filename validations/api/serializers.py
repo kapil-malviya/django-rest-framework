@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Student
 
 
-
+ 
 # Validators (for reuse)
 def start_with_r(value):
 	if value[0].lower() != 'r':
