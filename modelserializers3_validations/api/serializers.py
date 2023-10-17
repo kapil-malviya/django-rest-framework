@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Student
-
+ 
 # Create a serializer for the Student model
 class StudentSerializer(serializers.ModelSerializer):
     # Custom validator for checking if the name starts with 'r'
